@@ -1,0 +1,119 @@
+body {
+    background: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 8rem 0rem 2.5rem 8rem;
+}
+
+span {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+#container {
+    display: flex;
+    gap: 5.5rem;
+    margin-left: 8rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#orange,
+#yellow {
+    position: fixed;
+    right: 0;
+}
+
+#pink,
+#blue {
+    position: fixed;
+    left: 0;
+}
+
+.slideInFromRight {
+    animation: slideInFromRight 1s ease-in-out;
+}
+
+.slideInFromLeft {
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+#orange {
+    top: 20%;
+}
+
+#pink {
+    top: 40%;
+}
+
+#blue {
+    top: 60%;
+}
+
+#yellow {
+    top: 80%;
+}
+
+#orange,
+#pink,
+#blue,
+#yellow {
+    visibility: hidden;
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2.5rem;
+        margin: 4rem 2rem;
+    }
+
+    #container {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 2rem;
+
+        z-index: 1; 
+        position:relative; 
+     }
+
+     #orange{
+         opacity :0.09; 
+     }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    /* Add styles for mid-sized screens here */
+    #orange{
+         opacity :0.05; 
+     }
+}
