@@ -114,7 +114,7 @@ a {
          opacity :0.05; 
      } */
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1299px) {
     /* Add styles for mid-sized screens here */
     #orange{
          opacity :0.05; 
