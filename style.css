@@ -110,10 +110,28 @@ a {
      #orange{
          opacity :0.05; 
      }
+     /* #yellow{
+         opacity :0.05; 
+     } */
 }
 @media (min-width: 768px) and (max-width: 1199px) {
     /* Add styles for mid-sized screens here */
     #orange{
          opacity :0.05; 
+     }
+}
+@media(max-height: 540px) {
+    #yellow{
+         opacity :0.05; 
+     }
+}
+@media(max-height: 415px) {
+    #yellow, #orange, #pink, #blue{
+         opacity :0.05; 
+     }
+}
+@media(max-height: 600px) {
+   #pink{
+         opacity :0.15; 
      }
 }
